@@ -1,3 +1,5 @@
+![Fluxx Backend](./src/seed/assets/images/fluxx-backend.png)
+
 # Fluxx - Backend
 
 Fluxx est une ossature pour toute application web moderne construite sur le paradigme de backend monolithique modulaire.
@@ -150,19 +152,19 @@ Pour installer et exécuter le projet en local, suivez les étapes suivantes :
 
 1. **Cloner le dépôt**
 ```bash
-git clone git@deployment:jeremydierx/fluxx-backend.git
-cd fluxx-backend
+$ git clone git@deployment:jeremydierx/fluxx-backend.git
+$ cd fluxx-backend
 ```
 
 2. **Installer les dépendances**
 ```bash
-npm install
+$ npm install
 ```
 
-3. ** Adapter les fichiers de configuration à vos besoins**
+3. **Adapter les fichiers de configuration à vos besoins**
 ```bash
-cp .env.example .env
-cp ecosystem.config.example.js ecosystem.config.js
+$ cp .env.example .env
+$ cp ecosystem.config.example.js ecosystem.config.js
 ```
 
 ## En local
@@ -271,7 +273,7 @@ $ npm run remoteWorkerDeleteProd # Supprime les workers distants en production.
 
 ## Le principe KIS (Keep It Simple)
 
-Le principe **KIS (Keep It Simple)** prône la simplicité et l'absence de complexité inutile dans le développement et la conception. En privilégiant des solutions directes et faciles à comprendre, ce principe facilite la maintenance, réduit les erreurs et améliore l'efficacité. En se concentrant sur l'essentiel et en éliminant les éléments superflus, KIS permet de créer des systèmes plus robustes, plus accessibles et plus rapides à mettre en œuvre. Adopter KIS aide les équipes à rester agiles, à réduire les coûts et à livrer des produits de qualité supérieure en évitant les complications inutiles.
+Le principe **KIS (Keep It Simple)** prône la simplicité et l'absence de complexité inutile dans le développement et la conception. En privilégiant des solutions directes et faciles à comprendre, ce principe facilite la maintenance, réduit les erreurs et améliore l'efficacité. En se concentrant sur l'essentiel et en éliminant les éléments superflus, **KIS** permet de créer des systèmes plus robustes, plus accessibles et plus rapides à mettre en œuvre. Adopter **KIS** aide les équipes à rester agiles, à réduire les coûts et à livrer des produits de qualité supérieure en évitant les complications inutiles.
 
 ### Éviter la programmation orientée objet (POO)
 
@@ -330,6 +332,6 @@ Ne vous concentrez pas sur l'optimisation du code avant de vérifier qu'il y a e
 Utilisez les fonctionnalités natives du langage et des environnements de développement avant de recourir à des solutions externes ou sur-mesure.
 
 ### Conclusion
-En suivant ces principes KISS, vous pourrez créer des systèmes plus simples, plus robustes et plus faciles à maintenir, tout en réduisant les coûts et le temps de développement.
+En suivant ces principes **KIS**, vous pourrez créer des systèmes plus simples, plus robustes et plus faciles à maintenir, tout en réduisant les coûts et le temps de développement.
 
 ![Fluxx Backend par Code Alchimie](./src/seed/assets/images/logo.png)
