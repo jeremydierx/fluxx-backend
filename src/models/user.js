@@ -105,8 +105,6 @@ module.exports = {
       // on lowercase l’email
       user.email = user.email.toLowerCase()
 
-      user.numOfAttempts = 0
-
       await this.redis.multi()
         .hset(`user:${user.role}:${user.id}`, user)
         .hset('user:idByEmail', user.email, user.id)

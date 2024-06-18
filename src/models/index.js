@@ -14,6 +14,7 @@
 const fp = require('fastify-plugin')
 const user = require('./user')
 const log = require('./log')
+const mailer = require('./mailer')
 
 async function setModels (fastify) {
   user.functionsToBind.forEach(f => {
@@ -22,10 +23,14 @@ async function setModels (fastify) {
   log.functionsToBind.forEach(f => {
     log[f] = log[f].bind(fastify)
   })
+  mailer.functionsToBind.forEach(f => {
+    mailer[f] = mailer[f].bind(fastify)
+  })
 
   const models = {
     user,
-    log
+    log,
+    mailer
   }
 
   fastify.decorate('models', models)

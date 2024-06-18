@@ -115,7 +115,7 @@ module.exports = {
   /**
    * @function formatRead
    * Cette fonction formate les données de l'utilisateur pour la lecture.
-   * Elle convertit les propriétés 'createdOn', 'updatedOn' et 'numOfAttempts' de l'objet utilisateur en entiers.
+   * Elle convertit les propriétés 'createdOn' et 'updatedOn' de l'objet utilisateur en entiers.
    * @param {object} user - L'objet utilisateur.
    * @returns {object} L'objet utilisateur formaté.
    */
@@ -124,7 +124,6 @@ module.exports = {
     user.createdOn = parseInt(user.createdOn)
     // updatedOn > int
     if (user.updatedOn) user.updatedOn = parseInt(user.updatedOn)
-    if (user.numOfAttempts) user.numOfAttempts = parseInt(user.numOfAttempts)
     return user
   },
 

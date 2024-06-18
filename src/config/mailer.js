@@ -14,6 +14,7 @@
  * @property {string} env.DKIM_DOMAIN_NAME - Le nom de domaine pour DKIM.
  * @property {string} env.DKIM_KEY_SELECTOR - Le sélecteur de clé pour DKIM.
  * @property {string} env.DKIM_PRIVATE_KEY_PATH - Le chemin vers la clé privée pour DKIM.
+ * @property {string} env.ASK_RESET_PASSWORD_URL - L'URL pour réinitialiser le mot de passe.
  * @returns {object} Un objet de configuration pour le mailer.
  */
 
@@ -30,5 +31,6 @@ module.exports = env => ({
     domainName: env.DKIM_DOMAIN_NAME,
     keySelector: env.DKIM_KEY_SELECTOR,
     privateKeyPath: env.DKIM_PRIVATE_KEY_PATH
-  }
+  },
+  askResetPasswordUrl: env.ASK_RESET_PASSWORD_URL
 })
